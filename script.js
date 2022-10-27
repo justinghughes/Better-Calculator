@@ -23,3 +23,36 @@ let result;
 let key = 'start';
 let signKey = 'first';
 const displayPara = document.createElement('p');
+
+numBtn0.addEventListener('click', () => {
+    
+  })
+  
+  numBtn1.addEventListener('click', () => {
+    
+  })
+  numBtn2.addEventListener('click', () => {
+    
+  })
+  numBtn3.addEventListener('click', () => {
+    
+  })
+  numBtn4.addEventListener('click', () => {
+    
+  })
+  numBtn5.addEventListener('click', () => {
+    
+  })
+  numBtn6.addEventListener('click', () => {
+    
+  })
+  numBtn7.addEventListener('click', () => {
+    
+  })
+  numBtn8.addEventListener('click', () => {
+    
+  })
+  numBtn9.addEventListener('click', () => {
+    
+  })
+  
