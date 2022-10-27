@@ -32,6 +32,24 @@ function check() {
     }
 }
 
+function operate() {
+    console.log(typeof(numOne))
+    if (typeof numOne == 'number') {
+      numTwo = Number(numTwo.join(""));
+      result = numOne + numTwo;
+      numOne = result;
+      numTwo = [];
+      console.log('numOne result: ' + numOne)
+    } else {
+      numOne = Number(numOne.join(""));
+      numTwo = Number(numTwo.join(""));
+      result = numOne + numTwo;
+      numOne = result;
+      numTwo = [];
+      console.log('numOne result: ' + numOne)
+    }
+}
+
 function clickAdd() {
     addBtn.addEventListener('click', () => {
         if (signKey === 'first') {
@@ -53,34 +71,134 @@ function clickAdd() {
   clickAdd();
 
   numBtn0.addEventListener('click', () => {
-    
+    if (check() === false) {
+    numOne.push(0);
+    input.push(0);
+    displayInput();
+    console.log('numOne: ' + numOne)
+    } else if (check() === true) {
+      numTwo.push(0);
+      input.push(0);
+      displayInput();
+      console.log('numTwo: ' + numTwo)
+    }
   })
   
   numBtn1.addEventListener('click', () => {
-    
+    if (check() === false) {
+    numOne.push(1);
+    input.push(1);
+    displayInput();
+    console.log('numOne: ' + numOne)
+    } else if (check() === true) {
+      numTwo.push(1);
+      input.push(1);
+    displayInput();
+      console.log('numTwo: ' + numTwo)
+    }
   })
   numBtn2.addEventListener('click', () => {
-    
+    if (check() === false) {
+    numOne.push(2);
+    input.push(2);
+    displayInput();
+    console.log('numOne: ' + numOne)
+    } else if (check() === true) {
+      numTwo.push(2);
+      input.push(2);
+    displayInput();
+      console.log('numTwo: ' + numTwo)
+    }
   })
   numBtn3.addEventListener('click', () => {
-    
+    if (check() === false) {
+    numOne.push(3);
+    input.push(3);
+    displayInput();
+    console.log('numOne: ' + numOne)
+    } else if (check() === true) {
+      numTwo.push(3);
+      input.push(3);
+    displayInput();
+      console.log('numTwo: ' + numTwo)
+    }
   })
   numBtn4.addEventListener('click', () => {
-    
+    if (check() === false) {
+    numOne.push(4);
+    input.push(4);
+    displayInput();
+    console.log('numOne: ' + numOne)
+    } else if (check() === true) {
+      numTwo.push(4);
+      input.push(4);
+    displayInput();
+      console.log('numTwo: ' + numTwo)
+    }
   })
   numBtn5.addEventListener('click', () => {
-    
+    if (check() === false) {
+    numOne.push(5);
+    input.push(5);
+    displayInput();
+    console.log('numOne: ' + numOne)
+    } else if (check() === true) {
+      numTwo.push(5);
+      input.push(5);
+    displayInput();
+      console.log('numTwo: ' + numTwo)
+    }
   })
   numBtn6.addEventListener('click', () => {
-    
+    if (check() === false) {
+    numOne.push(6);
+    input.push(6);
+    displayInput();
+    console.log('numOne: ' + numOne)
+    } else if (check() === true) {
+      numTwo.push(6);
+      input.push(6);
+    displayInput();
+      console.log('numTwo: ' + numTwo)
+    }
   })
   numBtn7.addEventListener('click', () => {
-    
+    if (check() === false) {
+    numOne.push(7);
+    input.push(7);
+    displayInput();
+    console.log('numOne: ' + numOne)
+    } else if (check() === true) {
+      numTwo.push(7);
+      input.push(7);
+    displayInput();
+      console.log('numTwo: ' + numTwo)
+    }
   })
   numBtn8.addEventListener('click', () => {
-    
+    if (check() === false) {
+    numOne.push(8);
+    input.push(8);
+    displayInput();
+    console.log('numOne: ' + numOne)
+    } else if (check() === true) {
+      numTwo.push(8);
+      input.push(8);
+    displayInput();
+      console.log('numTwo: ' + numTwo)
+    }
   })
   numBtn9.addEventListener('click', () => {
-    
+    if (check() === false) {
+    numOne.push(9);
+    input.push(9);
+    displayInput();
+    console.log('numOne: ' + numOne)
+    } else if (check() === true) {
+      numTwo.push(9);
+      input.push(9);
+    displayInput();
+      console.log('numTwo: ' + numTwo)
+    }
   })
   
