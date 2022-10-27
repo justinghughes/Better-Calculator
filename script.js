@@ -32,6 +32,26 @@ function check() {
     }
 }
 
+function clickAdd() {
+    addBtn.addEventListener('click', () => {
+        if (signKey === 'first') {
+          operator = '+'
+          key = 'end';
+          input.push('+');
+          displayInput();
+          console.log(operator);
+          signKey = 'notfirst';
+        } else {
+          operate();
+          input.push('+');
+          displayInput();
+          console.log('+we');
+        }
+      }
+    )
+  }
+  clickAdd();
+
   numBtn0.addEventListener('click', () => {
     
   })
