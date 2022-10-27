@@ -32,6 +32,10 @@ function check() {
     }
 }
 
+equalsBtn.addEventListener('click', () => {
+    return operate();
+})
+
 function operate() {
     console.log(typeof(numOne))
     if (typeof numOne == 'number') {
