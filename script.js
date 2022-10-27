@@ -48,6 +48,10 @@ function operate() {
       numTwo = [];
       console.log('numOne result: ' + numOne)
     }
+    equalsBtn.addEventListener('click', () => {
+        displayPara.textContent = result;
+        displayContainer.appendChild(displayPara);
+      })
 }
 
 function clickAdd() {
