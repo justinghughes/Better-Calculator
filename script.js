@@ -24,7 +24,15 @@ let key = 'start';
 let signKey = 'first';
 const displayPara = document.createElement('p');
 
-numBtn0.addEventListener('click', () => {
+function check() {
+    if (key === 'end') {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+  numBtn0.addEventListener('click', () => {
     
   })
   
