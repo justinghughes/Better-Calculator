@@ -24,6 +24,11 @@ let key = 'start';
 let signKey = 'first';
 const displayPara = document.createElement('p');
 
+function displayInput() {
+    displayPara.textContent = input.join('');
+    displayContainer.appendChild(displayPara);
+  }
+
 function check() {
     if (key === 'end') {
         return true;
