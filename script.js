@@ -46,6 +46,16 @@ equalsBtn.addEventListener('click', () => {
     divideBtn.disabled = false;
 })
 
+clearBtn.addEventListener('click', () => {
+  input = [];
+  numOne = [];
+  numTwo = [];
+  result = null;
+  key = 'start';
+  displayPara.textContent = null;
+  displayContainer.appendChild(displayPara);
+})
+
 let operators = {
   '+': function(numOne, numTwo) { return numOne + numTwo },
   '-': function(numOne, numTwo) { return numOne - numTwo },
