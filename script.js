@@ -54,25 +54,78 @@ let operators = {
 }
 
 function operate() {
-    console.log(typeof(numOne))
+  console.log(typeof(numOne))
+  if (operator === '+') {
     if (typeof numOne == 'number') {
       numTwo = Number(numTwo.join(""));
-      result = numOne + numTwo;
+      operator = '';
+      result = operators[plus](parseFloat(numOne),parseFloat(numTwo));
       numOne = result;
       numTwo = [];
-      console.log('numOne result: ' + numOne)
+      console.log('numOne result: ' + result);
     } else {
       numOne = Number(numOne.join(""));
       numTwo = Number(numTwo.join(""));
-      result = numOne + numTwo;
+      operator = '';
+      result = operators[plus](parseFloat(numOne),parseFloat(numTwo));
       numOne = result;
       numTwo = [];
-      console.log('numOne result: ' + numOne)
+      console.log('numOne result: ' + result)
     }
-    equalsBtn.addEventListener('click', () => {
-        displayPara.textContent = result;
-        displayContainer.appendChild(displayPara);
-      })
+  } else if (operator === '-') {
+    if (typeof numOne == 'number') {
+      numTwo = Number(numTwo.join(""));
+      operator = '';
+      result = operators[minus](parseFloat(numOne),parseFloat(numTwo));
+      numOne = result;
+      numTwo = [];
+      console.log('numOne result: ' + result)
+    } else {
+      numOne = Number(numOne.join(""));
+      numTwo = Number(numTwo.join(""));
+      operator = '';
+      result = operators[minus](parseFloat(numOne),parseFloat(numTwo));
+      numOne = result;
+      numTwo = [];
+      console.log('numOne result: ' + result)
+    }
+  } else if (operator === '*') {
+    if (typeof numOne == 'number') {
+      numTwo = Number(numTwo.join(""));
+      operator = '';
+      result = operators[times](parseFloat(numOne),parseFloat(numTwo));
+      numOne = result;
+      numTwo = [];
+      console.log('numOne result: ' + result)
+    } else {
+      numOne = Number(numOne.join(""));
+      numTwo = Number(numTwo.join(""));
+      operator = '';
+      result = operators[times](parseFloat(numOne),parseFloat(numTwo));
+      numOne = result;
+      numTwo = [];
+      console.log('numOne result: ' + result)
+    }
+  } else if (operator === '/') {
+    if (typeof numOne == 'number') {
+      numTwo = Number(numTwo.join(""));
+      operator = '';
+      result = operators[divide](parseFloat(numOne),parseFloat(numTwo));
+      numOne = result;
+      numTwo = [];
+      console.log('numOne result: ' + result)
+    } else {
+      numOne = Number(numOne.join(""));
+      numTwo = Number(numTwo.join(""));
+      operator = '';
+      result = operators[divide](parseFloat(numOne),parseFloat(numTwo));
+      numOne = result;
+      numTwo = [];
+      console.log('numOne result: ' + result)
+    }
+  }
+    displayPara.textContent = result;
+    displayContainer.appendChild(displayPara);
 }
 
 function clickAdd() {
