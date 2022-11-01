@@ -48,6 +48,16 @@ equalsBtn.addEventListener('click', () => {
     subtractBtn.disabled = false;
     multiplyBtn.disabled = false;
     divideBtn.disabled = false;
+    numBtn0.disabled = true;
+    numBtn1.disabled = true;
+    numBtn2.disabled = true;
+    numBtn3.disabled = true;
+    numBtn4.disabled = true;
+    numBtn5.disabled = true;
+    numBtn6.disabled = true;
+    numBtn7.disabled = true;
+    numBtn8.disabled = true;
+    numBtn9.disabled = true;
 })
 
 clearBtn.addEventListener('click', () => {
@@ -56,6 +66,16 @@ clearBtn.addEventListener('click', () => {
   numTwo = [];
   result = null;
   key = 'start';
+  numBtn0.disabled = false;
+  numBtn1.disabled = false;
+  numBtn2.disabled = false;
+  numBtn3.disabled = false;
+  numBtn4.disabled = false;
+  numBtn5.disabled = false;
+  numBtn6.disabled = false;
+  numBtn7.disabled = false;
+  numBtn8.disabled = false;
+  numBtn9.disabled = false;
   displayPara.textContent = null;
   displayContainer.appendChild(displayPara);
 })
@@ -152,6 +172,16 @@ function clickAdd() {
         console.log(operator);
         key = 'end';
       } else if (key === 'end') {
+        numBtn0.disabled = false;
+        numBtn1.disabled = false;
+        numBtn2.disabled = false;
+        numBtn3.disabled = false;
+        numBtn4.disabled = false;
+        numBtn5.disabled = false;
+        numBtn6.disabled = false;
+        numBtn7.disabled = false;
+        numBtn8.disabled = false;
+        numBtn9.disabled = false;
         operator = '+';
         input.push('+');
         displayInput();
@@ -170,6 +200,16 @@ function clickSubtract() {
         displayInput();
         console.log(operator);
       } else if (key === 'end') {
+        numBtn0.disabled = false;
+        numBtn1.disabled = false;
+        numBtn2.disabled = false;
+        numBtn3.disabled = false;
+        numBtn4.disabled = false;
+        numBtn5.disabled = false;
+        numBtn6.disabled = false;
+        numBtn7.disabled = false;
+        numBtn8.disabled = false;
+        numBtn9.disabled = false;
         operator = '-';
         input.push('-');
         displayInput();
@@ -189,6 +229,16 @@ function clickMultiply() {
         displayInput();
         console.log(operator);
       } else {
+        numBtn0.disabled = false;
+        numBtn1.disabled = false;
+        numBtn2.disabled = false;
+        numBtn3.disabled = false;
+        numBtn4.disabled = false;
+        numBtn5.disabled = false;
+        numBtn6.disabled = false;
+        numBtn7.disabled = false;
+        numBtn8.disabled = false;
+        numBtn9.disabled = false;
         operator = '*';
         input.push('*');
         displayInput();
@@ -208,6 +258,16 @@ function clickDivide() {
         displayInput();
         console.log(operator);
       } else {
+        numBtn0.disabled = false;
+        numBtn1.disabled = false;
+        numBtn2.disabled = false;
+        numBtn3.disabled = false;
+        numBtn4.disabled = false;
+        numBtn5.disabled = false;
+        numBtn6.disabled = false;
+        numBtn7.disabled = false;
+        numBtn8.disabled = false;
+        numBtn9.disabled = false;
         operator = '/';
         input.push('/');
         displayInput();
