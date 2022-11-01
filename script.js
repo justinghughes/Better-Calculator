@@ -28,14 +28,6 @@ function displayInput() {
     displayContainer.appendChild(displayPara);
   }
 
-function check() {
-    if (key === 'end') {
-        return true;
-    } else {
-        return false;
-    }
-}
-
 equalsBtn.addEventListener('click', () => {
     operate();
     result = Array.from(String(result), Number)
@@ -139,24 +131,23 @@ function operate() {
 }
 
 function clickAdd() {
-    addBtn.addEventListener('click', () => {
-        if (signKey === 'first') {
-          operator = '+'
-          key = 'end';
-          input.push('+');
-          displayInput();
-          console.log(operator);
-          signKey = 'notfirst';
-        } else {
-          operate();
-          input.push('+');
-          displayInput();
-          console.log('+we');
-        }
-      }
-    )
-  }
-  clickAdd();
+  addBtn.addEventListener('click', () => {
+      if (key === 'start') {
+        operator = '+';
+        key = 'end';
+        input.push('+');
+        displayInput();
+        console.log(operator);
+        key = 'end';
+      } else if (key === 'end') {
+        operator = '+';
+        input.push('+');
+        displayInput();
+        console.log(operator);
+    }}
+  )
+}
+clickAdd();
 
   numBtn0.addEventListener('click', () => {
     if (check() === false) {
