@@ -21,7 +21,6 @@ let input = [];
 let operator = '';
 let result;
 let key = 'start';
-let signKey = 'first';
 const displayPara = document.createElement('p');
 
 function displayInput() {
@@ -38,7 +37,13 @@ function check() {
 }
 
 equalsBtn.addEventListener('click', () => {
-    return operate();
+    operate();
+    result = Array.from(String(result), Number)
+    input = result;
+    addBtn.disabled = false;
+    subtractBtn.disabled = false;
+    multiplyBtn.disabled = false;
+    divideBtn.disabled = false;
 })
 
 function operate() {
