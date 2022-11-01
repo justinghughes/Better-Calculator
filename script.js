@@ -26,9 +26,11 @@ const minus = '-';
 const times = '*';
 const divide = '/';
 const displayPara = document.createElement('p');
+equalsBtn.disabled = true;
 
 function displayInput() {
     displayPara.textContent = input.join('');
+    displayPara.classList.add('display-para')
     displayContainer.appendChild(displayPara);
   }
 
@@ -48,6 +50,7 @@ equalsBtn.addEventListener('click', () => {
     subtractBtn.disabled = false;
     multiplyBtn.disabled = false;
     divideBtn.disabled = false;
+    equalsBtn.disabled = true;
     numBtn0.disabled = true;
     numBtn1.disabled = true;
     numBtn2.disabled = true;
@@ -182,6 +185,7 @@ function clickAdd() {
         numBtn7.disabled = false;
         numBtn8.disabled = false;
         numBtn9.disabled = false;
+        equalsBtn.disabled = false;
         operator = '+';
         input.push('+');
         displayInput();
@@ -210,6 +214,7 @@ function clickSubtract() {
         numBtn7.disabled = false;
         numBtn8.disabled = false;
         numBtn9.disabled = false;
+        equalsBtn.disabled = false;
         operator = '-';
         input.push('-');
         displayInput();
@@ -239,6 +244,7 @@ function clickMultiply() {
         numBtn7.disabled = false;
         numBtn8.disabled = false;
         numBtn9.disabled = false;
+        equalsBtn.disabled = false;
         operator = '*';
         input.push('*');
         displayInput();
@@ -268,6 +274,7 @@ function clickDivide() {
         numBtn7.disabled = false;
         numBtn8.disabled = false;
         numBtn9.disabled = false;
+        equalsBtn.disabled = false;
         operator = '/';
         input.push('/');
         displayInput();
@@ -285,6 +292,7 @@ numBtn0.addEventListener('click', () => {
   displayInput();
   console.log('numOne: ' + numOne)
   } else if (check() === true) {
+    equalsBtn.disabled = false;
     numTwo.push(0);
     input.push(0);
     displayInput();
@@ -303,6 +311,7 @@ numBtn1.addEventListener('click', () => {
   displayInput();
   console.log('numOne: ' + numOne)
   } else if (check() === true) {
+    equalsBtn.disabled = false;
     numTwo.push(1);
     input.push(1);
   displayInput();
@@ -320,6 +329,7 @@ numBtn2.addEventListener('click', () => {
   displayInput();
   console.log('numOne: ' + numOne)
   } else if (check() === true) {
+    equalsBtn.disabled = false;
     numTwo.push(2);
     input.push(2);
   displayInput();
@@ -337,6 +347,7 @@ numBtn3.addEventListener('click', () => {
   displayInput();
   console.log('numOne: ' + numOne)
   } else if (check() === true) {
+    equalsBtn.disabled = false;
     numTwo.push(3);
     input.push(3);
   displayInput();
@@ -354,6 +365,7 @@ numBtn4.addEventListener('click', () => {
   displayInput();
   console.log('numOne: ' + numOne)
   } else if (check() === true) {
+    equalsBtn.disabled = false;
     numTwo.push(4);
     input.push(4);
   displayInput();
@@ -371,6 +383,7 @@ numBtn5.addEventListener('click', () => {
   displayInput();
   console.log('numOne: ' + numOne)
   } else if (check() === true) {
+    equalsBtn.disabled = false;
     numTwo.push(5);
     input.push(5);
   displayInput();
@@ -388,6 +401,7 @@ numBtn6.addEventListener('click', () => {
   displayInput();
   console.log('numOne: ' + numOne)
   } else if (check() === true) {
+    equalsBtn.disabled = false;
     numTwo.push(6);
     input.push(6);
   displayInput();
@@ -405,6 +419,7 @@ numBtn7.addEventListener('click', () => {
   displayInput();
   console.log('numOne: ' + numOne)
   } else if (check() === true) {
+    equalsBtn.disabled = false;
     numTwo.push(7);
     input.push(7);
   displayInput();
@@ -422,6 +437,7 @@ numBtn8.addEventListener('click', () => {
   displayInput();
   console.log('numOne: ' + numOne)
   } else if (check() === true) {
+    equalsBtn.disabled = false;
     numTwo.push(8);
     input.push(8);
   displayInput();
@@ -439,6 +455,7 @@ numBtn9.addEventListener('click', () => {
   displayInput();
   console.log('numOne: ' + numOne)
   } else if (check() === true) {
+    equalsBtn.disabled = false;
     numTwo.push(9);
     input.push(9);
   displayInput();
