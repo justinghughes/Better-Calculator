@@ -28,6 +28,14 @@ function displayInput() {
     displayContainer.appendChild(displayPara);
   }
 
+function check() {
+    if (key === 'end') {
+        return true;
+    } else {
+        return false;
+    }
+}
+
 equalsBtn.addEventListener('click', () => {
     operate();
     result = Array.from(String(result), Number)
