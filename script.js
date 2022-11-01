@@ -46,6 +46,13 @@ equalsBtn.addEventListener('click', () => {
     divideBtn.disabled = false;
 })
 
+let operators = {
+  '+': function(numOne, numTwo) { return numOne + numTwo },
+  '-': function(numOne, numTwo) { return numOne - numTwo },
+  '*': function(numOne, numTwo) { return numOne * numTwo },
+  '/': function(numOne, numTwo) { return numOne / numTwo }
+}
+
 function operate() {
     console.log(typeof(numOne))
     if (typeof numOne == 'number') {
