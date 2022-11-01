@@ -157,6 +157,63 @@ function clickAdd() {
 }
 clickAdd();
 
+function clickSubtract() {
+  subtractBtn.addEventListener('click', () => {
+      if (key === 'start') {
+        operator = '-';
+        key = 'end';
+        input.push('-');
+        displayInput();
+        console.log(operator);
+      } else if (key === 'end') {
+        operator = '-';
+        input.push('-');
+        displayInput();
+        console.log('-');
+      }
+    }
+  )
+}
+clickSubtract();
+
+function clickMultiply() {
+  multiplyBtn.addEventListener('click', () => {
+      if (key === 'start') {
+        operator = '*';
+        key = 'end';
+        input.push('*');
+        displayInput();
+        console.log(operator);
+      } else {
+        operator = '*';
+        input.push('*');
+        displayInput();
+        console.log('*');
+      }
+    }
+  )
+}
+clickMultiply();
+
+function clickDivide() {
+  divideBtn.addEventListener('click', () => {
+      if (key === 'start') {
+        operator = '/';
+        key = 'end';
+        input.push('/');
+        displayInput();
+        console.log(operator);
+      } else {
+        operator = '/';
+        input.push('/');
+        displayInput();
+        console.log('/');
+      }
+    }
+  )
+}
+clickDivide();
+
 numBtn0.addEventListener('click', () => {
   if (check() === false) {
   numOne.push(0);
