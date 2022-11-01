@@ -21,6 +21,10 @@ let input = [];
 let operator = '';
 let result;
 let key = 'start';
+const plus = '+';
+const minus = '-';
+const times = '*';
+const divide = '/';
 const displayPara = document.createElement('p');
 
 function displayInput() {
